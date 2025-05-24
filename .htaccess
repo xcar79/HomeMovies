@@ -1,0 +1,5 @@
+RewriteEngine On
+
+# Si acceden por HTTPS, redirígelos a HTTP de la misma URL
+RewriteCond %{HTTPS} on
+RewriteRule ^(.*)$ http://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
