@@ -19,3 +19,13 @@ List, search and play your movie collection, control playback (play/pause, seek)
 1. Clone this repo into your web server’s document root:
    ```bash
    git clone https://github.com/xcar79/HomeMovies.git
+
+2. Edit index.php and set your movie folder path:
+   ```bash
+   define('MOVIES_PATH', 'H:\\Peliculas');
+
+3. Enable VLC’s Lua HTTP interface:
+   - Open VLC → Tools > Preferences → bottom-left: Show Settings > All
+   - Navigate to Interface > Main interfaces, check Web
+   - In Interface > Main interfaces > Lua, set Lua HTTP password to vlc123 (or your choice)
+
